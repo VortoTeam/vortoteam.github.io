@@ -19,6 +19,7 @@
 			"hashes" : { "07f8b94c8d601a24a1914a1a92bec0e4fafda964" : "0.0.1" }
 		}
 	},
+
 	"revealjs": {
 		"xvorto" : true,
 		"vulnerabilities" : [
@@ -902,6 +903,15 @@
 	"angularjs" : {
 		"bowername": [ "angularjs", "angular.js" ],
 		"vulnerabilities" : [
+			{
+				"below" : "1.8.0",
+				"severity": "medium",
+				"identifiers": {
+					"summary": "angular.js prior to 1.8.0 allows cross site scripting. The regex-based input HTML replacement may turn sanitized code into unsanitized one.",
+					"CVE": [ "CVE-2020-7676" ] 
+				},
+				"info" : [ "https://nvd.nist.gov/vuln/detail/CVE-2020-7676" ]	
+			},	
 			{
 				"below" : "1.7.9",
 				"severity": "medium",
